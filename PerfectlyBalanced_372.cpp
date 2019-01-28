@@ -31,8 +31,12 @@ bool Balanced2(string s) { //no algorithm
 }
 
 int main() {
-  string input = "";
-  cin >> input;
-  cout << Balanced2(input);
+  while (true) {
+    cout << "Enter String: ";
+    string input = "";
+    cin >> input;
+    if (Balanced2(input)) cout << "Balanced\n";
+    else cout << "Not Balanced\n";
+  }
   return 0;
 }
